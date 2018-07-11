@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    /* Mobile */
+    .main{
+  flex-wrap: wrap;
+    }
+    .row{
+        
+    }
+    #services{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

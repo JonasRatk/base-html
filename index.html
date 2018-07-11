@@ -8,12 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+
 
 
 
@@ -23,7 +24,7 @@
 <body id="body">
 
     <header class="header">
-        <div class="container flex">
+        <div class=" flex">
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/images/logo_03.png" alt="Brandi">
@@ -32,41 +33,35 @@
                     <div class="logotext">Nothing intresting</div>
                 </a>
             </div>
-            <nav class="menu">
-                <ul class="flex">
+                <ul class="menu">
 
-                    <li> <a href="#body" class="active filter">Menu</a></li>
-                    <li> <a href="#features" class="">Features</a></li>
-                    <li> <a href="#works">Works</a></li>
-                    <li> <a href="#team">Team</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li class="menu-item"> <a href="#body" class="active filter">Menu</a></li>
+                    <li class="menu-item"> <a href="#features" class="">Features</a></li>
+                    <li class="menu-item"> <a href="#works">Works</a></li>
+                    <li class="menu-item"> <a href="#team">Team</a></li>
+                    <li class="menu-item"> <a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            <script>
-                $(window).scroll(function() {
-                    if ($(window).scrollTop() > 400) {
-                        $(".header").css("background-color", "#0EB493");
-                    } else {
-                        $(".header").css("background-color", "rgba(16, 22, 54, 0.2)");
-                    }
-                });
-
-            </script>
         </div>
     </header>
 
     <section>
         <div class="main">
             <div class="maintext">
-                <h1>
-                    <span class="light">Meet</span>
-                    <span class="bold">Brandi!</span>
-                </h1>
-                <h2 class="h2top">
-                    <span class="colortext">/creative</span>
-                    <span class="light"> one page template.</span>
-                </h2>
-                <p class="ptop">We are team of professsionals</p>
+                <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h1>
+                        <span class="light">Meet</span>
+                        <span class="bold">Brandi!</span>
+                    </h1>
+                </div>
+                <div class="wow animated bounceInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2 class="h2top">
+                        <span class="colortext">/creative</span>
+                        <span class="light"> one page template.</span>
+                    </h2>
+                </div>
+                <div class="wow animated bounceInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <p class="ptop">We are team of professsionals</p>
+                </div>
                 <ul class="social-links text-center">
                     <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
                     <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -78,14 +73,18 @@
 
 
     </section>
+    <!--    FEATURES -->
     <section id="features">
 
         <div class="container">
-            <div class="title">
-                <h2>FEATURES</h2>
+            <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                <div class="title">
+                    <h2>FEATURES</h2>
+                </div>
                 <div class="popav"><i class="far fa-heart"></i></div>
             </div>
             <div class="row">
+
                 <i class="fab fa-github"></i>
                 <div id="services">
 
@@ -93,7 +92,9 @@
 
                         <h3 class="iconh3">Branding</h3>
                         <p class="flexcom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim non odio et pulvinar. Vivamus nec ligula nisl. Quisque metus felis, gravida ut tincidunt non, cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim non odio et pulvinar. Vivamus nec ligula nisl. Quisque metus felis, gravida ut tincidunt non, cursus mollis exs mollis ex Quisque metus felis, gravida ut tincidunt non, cursus mollis ex</p>
+
                     </div>
+
                 </div>
                 <i class="fas fa-pencil-alt"></i>
                 <div id="services">
@@ -120,9 +121,10 @@
     <!--    WORKS -->
     <section id="works" class="works clear">
         <div class="container">
-
-            <div class="title">
-                <h2>WORKS</h2>
+            <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                <div class="title">
+                    <h2>WORKS</h2>
+                </div>
                 <div class="popav"><i class="far fa-heart"></i></div>
             </div>
             <div class="sec-p">
@@ -130,15 +132,88 @@
                 </p>
             </div>
             <div class="work-fil">
-                <ul class="text-center">
-                    <li><a href="" data-filter="all" class="active filter">All</a></li>
-                    <li><a href="" data-filter=".branding" class="filter">Branding</a></li>
-                    <li><a href="" data-filter=".web" class="filter">web</a></li>
-                    <li><a href="" data-filter=".logo-design" class="filter">logo design</a></li>
-                    <li><a href="" data-filter=".photography" class="filter">photography</a></li>
+                <ul class="filter">
+                    <li><a href="" data-filter="all">All</a></li>
+                    <li><a href="" data-filter=".branding">Branding</a></li>
+                    <li><a href="" data-filter=".web">web</a></li>
+                    <li><a href="" data-filter=".logo-design">logo design</a></li>
+                    <li><a href="" data-filter=".photography">photography</a></li>
                 </ul>
             </div>
+            <div class="projects">
+                <figure class="work-item branding">
+                    <img src="assets/images/item-1.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" fancybox href="assets/images/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
 
+                <figure class="work-item web">
+                    <img src="assets/images/item-2.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item logo-design">
+                    <img src="assets/images/item-3.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item photography">
+                    <img src="assets/images/item-4.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item branding">
+                    <img src="assets/images/item-5.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item web">
+                    <img src="assets/images/item-6.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item logo-design">
+                    <img src="assets/images/item-7.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="work-item photography">
+                    <img src="assets/images/item-8.jpg" alt="">
+                    <figcaption class="overlay">
+                        <a class="fancybox" rel="works" title="Info" data-fancybox href="assets/images/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                        <h4>Labore et dolore magnam</h4>
+                        <p>Photography</p>
+                    </figcaption>
+                </figure>
+
+            </div>
         </div>
 
     </section>
@@ -158,60 +233,60 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                 </p>
             </div>
-            <div class="team-member">
-                <figure class="member-thumb">
-                    <img src="assets/images/member-1.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
+          
+                <div class="team-member">
+                    <figure class="member-thumb">
+                        <div class="member-overlay">
+                        <img src="assets/images/member-1.png" class="img-responsive" alt="Team Member">
+                        <figcaption class="overlay">
+                            <h5>voluptatem quia voluptas </h5>
+                            <p>sit aspernatur aut odit aut fugit,</p>
+                            <ul class="social-links text-center">
+                                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+</div>
+                        <h4>Dale Cooper</h4>
+                        <span>Managing Director</span>
+                    </figure>
+                    <figure class="member-thumb">
+                        <div class="member-overlay">
+                        <img src="assets/images/member-2.png" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <h5>voluptatem quia voluptas </h5>
+                            <p>sit aspernatur aut odit aut fugit,</p>
+                            <ul class="social-links text-center">
+                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+                        </div>
 
+                        <h4>Bobby Briggs</h4>
+                        <span>Developer</span>
+                    </figure>
+                    <figure class="member-thumb">
+                        <div class="member-overlay">
+                        <img src="assets/images/member-3.png" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <h5>voluptatem quia voluptas </h5>
+                            <p>sit aspernatur aut odit aut fugit,</p>
+                            <ul class="social-links text-center">
+                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            </ul>
+                        </figcaption>
+                        </div>
 
-                    <h4>Dale Cooper</h4>
-                    <span>Managing Director</span>
-                </figure>
-                <figure class="member-thumb">
-                    <img src="assets/images/member-2.png" alt="Team Member" class="img-responsive">
-
-
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-
-
-                    <h4>Bobby Briggs</h4>
-                    <span>Developer</span>
-                </figure>
-                <figure class="member-thumb">
-                    <img src="assets/images/member-3.png" alt="Team Member" class="img-responsive">
-
-
-                    <figcaption class="overlay">
-                        <h5>voluptatem quia voluptas </h5>
-                        <p>sit aspernatur aut odit aut fugit,</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-
-
-                    <h4>Andy Brennan</h4>
-                    <span>Managing Director</span>
-                </figure>
-            </div>
+                        <h4>Andy Brennan</h4>
+                        <span>Managing Director</span>
+                    </figure>
+                </div>
+            
         </div>
 
     </section>
@@ -219,40 +294,38 @@
     <section id="facts" class="facts">
         <div class="city-overlay">
             <div class="container">
-
-                <div class="title">
-                    <h2>SOME FUN FACTS</h2>
-                    <div class="popav"><i class="far fa-heart"></i></div>
+                <div class="wow animated shake" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="title">
+                        <h2>SOME FUN FACTS</h2>
+                        <div class="popav"><i class="far fa-heart"></i></div>
+                    </div>
                 </div>
                 <div class="eile">
-                    <div class="animated bounceInDown">
+                    <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="counters-item">
                             <i class="fa fa-clock-o fa-3x"></i>
                             <span class="timer" data-to="3200">0</span>
                             <p>Hours of Work</p>
                         </div>
                     </div>
-                    <div class="animated bounceInDown" data-duration="500ms" data-delay="300ms">
+                    <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="counters-item">
                             <i class="fa fa-users fa-3x"></i>
                             <span class="timer" data-to="120">0</span>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
                             <p>Satisfied Clients</p>
                         </div>
                     </div>
-                    <div class="animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="counters-item">
                             <i class="fa fa-rocket fa-3x"></i>
                             <span class="timer" data-to="420">0</span>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
                             <p>Projects Delivered</p>
                         </div>
                     </div>
-                    <div class="animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="counters-item">
                             <i class="fa fa-trophy fa-3x"></i>
-                            <span class="timer" data-to="420">0</span>
-
+                            <span class="timer" data-to="333">0</span>
                             <p>Awards Won</p>
                         </div>
                     </div>
@@ -261,12 +334,14 @@
             </div>
         </div>
     </section>
-    <!---------- Lets Discu --->
-    <section class="discuss">
+    <!---------- Lets Discuss --->
+    <section id="contact">
         <div class="container">
             <div class="title">
+                 <div class="wow animated bounceInDown" data-wow-duration="500ms" data-wow-delay="300ms">
                 <h2>LET'S DISCUSS</h2>
                 <div class="popav"><i class="far fa-heart"></i></div>
+                </div>
                 <div class="sec-p">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                     </p>
@@ -277,27 +352,92 @@
                     <h3>Cras at ultrices erat, sed vulputate!</h3>
                     <p>Ulonų 5, 1234,</p>
                     <p>Vilnius. Lithuania.</p>
-                    <p>+370 66 999 000</p>
+                    <a href="tel:+370 66 999 000">+370 66 999 000</a>
+                </div>
+                <div class="contact-form">
+                    <h3>Say hello!</h3>
+                    <form action="#" id="contact-form">
+                        <div class="input-group name-email">
+                            <div class="input-field">
+                                <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <ul class="footer-social">
+                        <li><a href="https://www.plus.gooogle.com/"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    </ul>
                 </div>
             </div>
             <!-- contact form -->
-            <div class="contact-form-f wow fadeInLeft animated" data-wow-duration="500ms">
-            <div class="contact-form">
-							<h3>Say hello!</h3>
-                <form action="#" id="contact-form">
-                
-                
-                
-                </form>
+
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Ulon%C5%B3%20gatv%C4%97%205&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.webdesign-muenchen-pb.de"></a></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-single">
+                    <img src="assets/images/logo_03.png" alt="Brandi">
+                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="footer-single">
+                    <h6>Subscribe </h6>
+                    <form action="#" class="subscribe">
+                        <input type="text" name="subscribe" id="subscribe">
+                        <input type="submit" value="&#8594;" id="subs">
+                    </form>
+                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="footer-single">
+                    <h6>Explore</h6>
+                    <ul>
+                        <li><a href="#">Inside Us</a></li>
+                        <li><a href="#">Flickr</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-single">
+                    <h6>Support</h6>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Market Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Pressroom</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+
+<!--    <a href="#" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>-->
+
+    <!--    <script src="assets/scripts/isotope.pkgd.min.js"></script>-->
     <script src="assets/scripts/wow.min.js"></script>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="assets/scripts/jquery-3.3.1.min.js"></script>
     <script src="assets/scripts/jquery.fancybox.min.js"></script>
     <script src="assets/scripts/jquery.js"></script>
     <script src="assets/scripts/jquery.countTo.js"></script>
+    <script src="assets/scripts/owl.carousel.min.js"></script>
 </body>
 
 </html>
