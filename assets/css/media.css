@@ -1,14 +1,86 @@
-@media screen and (max-width: 600px) {
-    /* Mobile */
-    .main{
-  flex-wrap: wrap;
+/*============================================================
+	Mobile (Landscape) Design for a width of 480px
+==============================================================*/
+
+@media screen and (max-width: 767px) {
+    .menu-item {
+        padding: 5px;
     }
-    .row{
-        
+
+    .menu li a:hover,
+    .menu li.active a {
+        padding: 1px;
+        border-top-color: #1b9af6;
     }
-    #services{
-        max-width: 100%;
-        display: flex;
+    #team {
         flex-wrap: wrap;
+
+    }
+    .member-thumb {
+        flex-wrap: wrap;
+
+    }
+    .brand {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .deve {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .cons {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .row {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 31px;
+
+    }
+    .h2top {
+        font-size: 24px;
+    }
+    .footer-info {
+        flex-wrap: wrap;
+        line-height: normal;
+    }
+    .footer-single {
+        width: 100%;
+    }
+    .footer-social {
+        display: flex;
+        padding: 0;
+    }
+    .footer-social li {
+        padding: 0 15px;
+    }
+    .work-item {
+        width: 50%;
+        display: inline-block;
+    }
+    .work-item > img {
+        max-width: 100%;
+    }
+    .counters-item {
+        width: 100%;
+    }
+    .menu {
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    .menu.show {
+        display: block;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+    .burger {
+        display: block;
     }
 }

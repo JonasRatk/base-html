@@ -59,11 +59,9 @@ header .container {
     text-decoration: none;
 
 }
-
-.logo a {
-    text-decoration: none;
+.burger{
+    display: none;
 }
-
 .logotext {
     font-size: 13px;
     font-weight: 300;
@@ -94,8 +92,8 @@ header .container {
     padding: 10px 10px;
 }
 
-.menu li a.active,
-.menu li a:hover {
+.menu li a:hover,
+.menu li.active a{
     border-top-color: #1b9af6;
 }
 
@@ -104,9 +102,9 @@ figure p {
 }
 
 .container {
-    max-width: auto;
-    margin: 0 90px;
-    padding: 0 10px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -254,6 +252,7 @@ h3 {
 
 .row {
     align-items: baseline;
+    padding: 0 30px;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -264,14 +263,25 @@ h3 {
 
 .eile {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .dev {
     text-align: center;
 }
-
+.brand{
+     display: flex;
+/*    width: 33.3333%;*/
+}
+.deve{
+     display: flex;
+/*    width: 33.3333%;*/
+}
+.cons{
+     display: flex;
+/*    width: 33.3333%;*/
+}
 .brand-desc {
     margin-left: 30px;
 }
@@ -282,11 +292,9 @@ h3 {
     margin-bottom: 25px;
 }
 
-.iconh3 {
-    display: inline-block;
-}
 
 .row i {
+    height: 20%;
     font-size 2em;
     color: #0eb493;
     font-size: 26px;
@@ -295,17 +303,15 @@ h3 {
     padding: 10px;
 }
 
-.flexcom {
-    margin: 0;
-}
 
 .sec-p {
     font-weight: 600;
     font-size: 18px;
+    padding: 0 30px;
 }
 
 #services {
-    width: 33%;
+
 }
 
 
@@ -315,7 +321,10 @@ h3 {
     display: flex;
 }
 
-.projects {}
+#projects {
+    display:flex;
+    flex-wrap: wrap;
+}
 
 
 .work-fil {
@@ -337,8 +346,8 @@ h3 {
     text-decoration: none;
 }
 
-.work-fil ul li a:hover,
-.work-fil ul li a.active {
+ul#filter li a:hover,
+ul#filter li.active a{
     background-color: #0eb493;
     border-radius: 6px;
     color: #fff;
@@ -347,7 +356,7 @@ h3 {
 }
 
 .work-item {
-    float: left;
+    display:flex;
     width: 25%;
     position: relative;
     margin: 0;
@@ -408,12 +417,16 @@ h3 {
 
 /* ------------ TEAM --------*/
 
-#team {}
+#team {
+   display: flex; 
+    
+}
 
 .team-member {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .member-overlay {
@@ -482,6 +495,7 @@ h3 {
 
 .city-overlay {
     background-color: rgba(6, 32, 51, .8);
+    width: 100%;
     padding: 70px 0;
 }
 
@@ -517,7 +531,9 @@ h3 {
 
 .contact-list {
     display: flex;
+    justify-content: space-around;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .contact-address p {
@@ -544,7 +560,7 @@ h3 {
 }
 
 .contact-form {
-    padding: 0 100px;
+    
 }
 
 .contact-form h3 {
@@ -566,6 +582,7 @@ h3 {
     border-width: 0 0 1px;
     box-shadow: none;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .contact-form .input-field {
@@ -643,7 +660,6 @@ label.error {
 .footer-info {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     padding: 25px 0;
     font-size: 13px;
 }
@@ -692,7 +708,7 @@ label.error {
     color: white;
 }
 
-#back-top {
+.scrollToTop {
     color: #6a737b;
     bottom: 20px;
     position: fixed;
